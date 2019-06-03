@@ -9,3 +9,7 @@ function test_helper(){
     return 'ok';
 }
 
+function route_class()
+{
+    return str_replace('.', '-', \Illuminate\Support\Facades\Route::currentRouteName());
+}
